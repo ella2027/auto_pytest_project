@@ -628,6 +628,7 @@ pytest tests/order/test_valueSubmit.py -s -v
 ```
 
 后续新增业务用例时，复用 `api_client` Fixture 即可，不需要在每个测试文件中重复实现 Token 读取和公共 Headers 配置。
+```text
 备注内容
 # ========== 环境切换 ==========
 # 可选值: test / staging / prod
@@ -649,5 +650,6 @@ PROD_AUTH_TOKEN=
 # ========== 飞书巡检通知 ==========
 LARK_WEBHOOK_URL=
 LARK_NOTIFY_ON_SUCCESS=true
+```
 
 
