@@ -628,3 +628,26 @@ pytest tests/order/test_valueSubmit.py -s -v
 ```
 
 后续新增业务用例时，复用 `api_client` Fixture 即可，不需要在每个测试文件中重复实现 Token 读取和公共 Headers 配置。
+备注内容
+# ========== 环境切换 ==========
+# 可选值: test / staging / prod
+# 决定下面读取哪一组 BASE_URL / AUTH_TOKEN
+ENV=test
+
+# ========== 测试环境 ==========
+TEST_BASE_URL=
+TEST_AUTH_TOKEN=
+
+# ========== 预发/Staging 环境（如果有的话）==========
+STAGING_BASE_URL=
+STAGING_AUTH_TOKEN=
+
+# ========== 生产环境（谨慎配置，写类接口的用例不建议在生产环境自动跑）==========
+PROD_BASE_URL=
+PROD_AUTH_TOKEN=
+
+# ========== 飞书巡检通知 ==========
+LARK_WEBHOOK_URL=
+LARK_NOTIFY_ON_SUCCESS=true
+
+
