@@ -587,7 +587,9 @@ test_data/csv/login_tokens.csv
 
 ```text
 .env
-test_data/csv/login_users.csv
+test_data/csv/login_users.csv :
+loginName,loginPassword
+ella11@grr.la,admin123Aa@
 test_data/csv/login_tokens.csv
 ```
 
