@@ -1,0 +1,4 @@
+user_list:
+  method: get
+  path: /user/api/inbox/list
+  

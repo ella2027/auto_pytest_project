@@ -1,0 +1,9 @@
+# 下单接口
+order_submit:
+  method: POST
+  path: /user/api/currency/order/submit
+#订单查询接口
+order_select:
+  method: GET
+  path: /user/api/currency/order/select
+

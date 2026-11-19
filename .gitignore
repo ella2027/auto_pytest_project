@@ -1,0 +1,29 @@
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Python bytecode/cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Test outputs and logs
+logs/
+reports/
+allure-results/
+*.log
+
+# Local credentials and generated tokens
+test_data/csv/login_users.csv
+test_data/csv/login_tokens.csv
+
+# IDE and OS files
+.DS_Store
+.idea/
+.vscode/
